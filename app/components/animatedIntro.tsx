@@ -10,7 +10,7 @@ const lines = [
 ];
 
 const skills = [
-  { name: "Computer Programming", link: "/programming" },
+  { name: "Programming", link: "/programming" },
   { name: "Writing", link: "/writing" },
   { name: "Social Media", link: "/social-media" }
 ];
@@ -67,7 +67,7 @@ export default function AnimatedIntro() {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="w-20 h-20 p-2 min-w-36 text-center text-xs sm:min-w-48 flex items-center justify-center font-semibold rounded-full border-2 border-white sm:text-sm cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-customGold to-white"
+              className="w-20 h-20 p-2 min-w-32 text-center flex items-center justify-center font-semibold rounded-full border-2 border-white text-xs sm:text-sm cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-customGold to-white"
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ repeat: Infinity, duration: 3.5 }}
               onClick={() => router.push(skill.link)}
