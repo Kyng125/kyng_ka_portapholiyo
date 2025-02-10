@@ -9,10 +9,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        customGray: "#302F2F",
+        customGold: "#D9A840",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 } satisfies Config;
