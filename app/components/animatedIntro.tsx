@@ -67,7 +67,7 @@ export default function AnimatedIntro() {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="w-20 h-20 p-2 min-w-28 text-center flex items-center justify-center font-semibold rounded-full border-2 border-white text-xs sm:text-sm cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-customGold to-white"
+              className="w-20 h-12 p-2 min-w-28 text-center flex items-center justify-center font-semibold rounded-full border-2 border-white text-xs sm:text-sm cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-customGold to-white"
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ repeat: Infinity, duration: 3.5 }}
               onClick={() => router.push(skill.link)}
